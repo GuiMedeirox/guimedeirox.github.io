@@ -4,9 +4,9 @@ title: About
 description: Learn more about Guilherme Medeiros and his learning journey in public
 ---
 
-# About Guilherme Medeiros
+# About me
 
-Hello! I'm Guilherme Medeiros, a developer passionate about technology and continuous learning. This blog is my space to practice **"Learn in Public"** - a philosophy that believes we learn better when we share our knowledge.
+Hello! I'm Guilherme, a brazillian developer seeking to improve as a person and wannabe software engineer. This blog is my space to practice **"Learn in Public"** - a philosophy that believes we learn better when we share our knowledge.
 
 ## About the Blog
 
@@ -16,6 +16,8 @@ This blog was born from the desire to document my learning journey and share kno
 - **Transparency is powerful** - Show the process, not just the results
 - **Community is essential** - We learn a lot from feedback and discussions
 - **Consistency is fundamental** - Small daily steps lead to great results
+
+---
 
 ## What you'll find here
 
@@ -47,6 +49,8 @@ Practical guides about:
 - Efficient debugging
 - Developer productivity
 
+---
+
 ## Learn in Public Philosophy
 
 The "Learn in Public" concept was popularized by [Shawn Wang](https://www.swyx.io/) and is based on some principles:
@@ -57,6 +61,8 @@ The "Learn in Public" concept was popularized by [Shawn Wang](https://www.swyx.i
 4. **Help others** - Answer questions and participate in discussions
 5. **Build in public** - Develop visible projects
 
+--- 
+
 ## Technology Stack
 
 Currently working with:
@@ -64,6 +70,8 @@ Currently working with:
 - **Database**: PostgreSQL, MongoDB
 - **Cloud**: (?)
 - **DevOps**: (learning) -> Docker, Kubernetes, CI/CD
+
+--- 
 
 ## Learning Goals
 
@@ -82,6 +90,8 @@ Currently working with:
 - [ ] Create own open source projects
 - [ ] Speak at technology 
 
+--- 
+
 ## How to Contribute
 
 This blog is a collaborative learning space! You can contribute in several ways:
@@ -90,12 +100,17 @@ This blog is a collaborative learning space! You can contribute in several ways:
 - **Corrections**: Point out errors or improvements
 - **Discussions**: Participate in discussions about the topics covered
 
+
+--- 
+
 ## Links
 
 - **GitHub**: [@guimedeirox](https://github.com/guimedeirox)
 - **LinkedIn**: [Guilherme Medeiros](https://www.linkedin.com/in/guilherme-medeiros-9713a7236/)
 - **Email**: guimedeiroxdev@gmail.com
 - **Discord**: guilherme.java
+
+--- 
 
 ## Blog Statistics
 
