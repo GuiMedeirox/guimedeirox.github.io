@@ -1,0 +1,76 @@
+# Site settings
+title: Guilherme Medeiros
+email: guilherme@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Blog pessoal para aprender em público. Compartilhando conhecimento sobre desenvolvimento, 
+  tecnologia e experiências de aprendizado.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://guimedeirox.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: guimedeirox
+github_username:  guimedeirox
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+  # - jekyll-archives
+
+# Pagination
+paginate: 5
+paginate_path: "/page/:num/"
+
+# Archives
+# jekyll-archives:
+#   enabled:
+#     - categories
+#     - tags
+#   layouts:
+#     category: archive-category
+#     tag: archive-tag
+#   permalinks:
+#     category: '/category/:name/'
+#     tag: '/tag/:name/'
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:collection/:title/
+  pages:
+    output: true
+    permalink: /:title/
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Guilherme Medeiros"
+      comments: true
+      share: true
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/ 

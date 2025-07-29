@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+<div class="archive">
+    <div class="container">
+        <header class="archive-header">
+            <h1 class="archive-title">Category: {{ page.title }}</h1>
+            <p class="archive-description">Posts in this category</p>
+        </header>
+
+        <div class="posts-grid">
+            {% for post in site.categories[page.title] %}
+            <article class="post-card">
+                <div class="post-card-content">
+                    <header class="post-card-header">
+                        <h2 class="post-card-title">
+                            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                        </h2>
+                        <div class="post-card-meta">
+                            <time datetime="{{ post.date | date_to_xmlschema }}">
+                                {{ post.date | date: "%B %d, %Y" }}
+                            </time>
+                            {% if post.categories %}
+                            <span class="post-categories">
+                                {% for category in post.categories %}
+                                <a href="{{ '/category/' | append: category | relative_url }}">{{ category }}</a>
+                                {% unless forloop.last %}, {% endunless %}
+                                {% endfor %}
+                            </span>
+                            {% endif %}
+                        </div>
+                    </header>
+                    {% if post.excerpt %}
+                    <div class="post-card-excerpt">
+                        {{ post.excerpt | strip_html | truncatewords: 30 }}
+                    </div>
+                    {% endif %}
+                    <footer class="post-card-footer">
+                        <a href="{{ post.url | relative_url }}" class="read-more">Read more →</a>
+                    </footer>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</div> 

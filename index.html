@@ -1,0 +1,136 @@
+---
+layout: default
+title: Home
+---
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <h1>Guilherme Medeiros</h1>
+        <p>wannabe a good software developer :)</p>
+        <div class="hero-buttons">
+            <a href="/posts" class="btn btn-primary">View Posts</a>
+            <a href="/about" class="btn btn-secondary">About Me</a>
+        </div>
+    </div>
+</section>
+
+<!-- Latest Posts -->
+<section class="latest-posts">
+    <div class="container">
+        <h2>Recent Posts</h2>
+        <div class="posts-grid">
+            {% for post in paginator.posts %}
+            <article class="post-card">
+                <div class="post-card-content">
+                    <header class="post-card-header">
+                        <h2 class="post-card-title">
+                            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                        </h2>
+                        <div class="post-card-meta">
+                            <time datetime="{{ post.date | date_to_xmlschema }}">
+                                {{ post.date | date: "%B %d, %Y" }}
+                            </time>
+                            {% if post.categories %}
+                            <span class="post-categories">
+                                {% for category in post.categories %}
+                                <a href="{{ '/category/' | append: category | downcase | relative_url }}">{{ category }}</a>
+                                {% unless forloop.last %}, {% endunless %}
+                                {% endfor %}
+                            </span>
+                            {% endif %}
+                        </div>
+                    </header>
+                    {% if post.excerpt %}
+                    <div class="post-card-excerpt">
+                        {{ post.excerpt | strip_html | truncatewords: 30 }}
+                    </div>
+                    {% endif %}
+                    <footer class="post-card-footer">
+                        <a href="{{ post.url | relative_url }}" class="read-more">Read more →</a>
+                    </footer>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+
+        {% if paginator.posts.size == 0 or paginator.posts.size == nil %}
+        <div class="empty-state">
+            <h3>No posts yet</h3>
+            <p>Your first post will appear here. Start writing to begin your learn in public journey!</p>
+            <div class="hero-buttons">
+                <a href="/about" class="btn btn-primary">Learn More</a>
+            </div>
+        </div>
+        {% endif %}
+
+        <!-- Pagination -->
+        {% if paginator.total_pages > 1 %}
+        <div class="pagination">
+            {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path | relative_url }}" class="prev">Previous</a>
+            {% endif %}
+
+            {% for page in (1..paginator.total_pages) %}
+            {% if page == paginator.page %}
+            <span class="current">{{ page }}</span>
+            {% elsif page == 1 %}
+            <a href="{{ '/' | relative_url }}">{{ page }}</a>
+            {% else %}
+            <a href="{{ site.paginate_path | replace: ':num', page | relative_url }}">{{ page }}</a>
+            {% endif %}
+            {% endfor %}
+
+            {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path | relative_url }}" class="next">Next</a>
+            {% endif %}
+        </div>
+        {% endif %}
+    </div>
+</section>
+
+<!-- Categories Section -->
+<section class="categories-section">
+    <div class="container">
+        <h2>Categories</h2>
+        <div class="categories-grid">
+            {% assign categories = site.categories | sort %}
+            {% for category in categories %}
+            <div class="category-card">
+                <h3>
+                    <a href="{{ '/category/' | append: category[0] | relative_url }}">
+                        {{ category[0] | capitalize }}
+                    </a>
+                </h3>
+                <p>{{ category[1].size }} posts</p>
+            </div>
+            {% endfor %}
+        </div>
+        
+        {% if categories.size == 0 %}
+        <div class="empty-state">
+            <h3>No categories yet</h3>
+            <p>Categories will appear here once you publish posts with categories.</p>
+        </div>
+        {% endif %}
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="about-section">
+    <div class="container">
+        <div class="about-content">
+            <h2>About the Blog</h2>
+            <p>This is a space where I share my learning journey in public. I believe that knowledge should be shared and that we learn better when we teach.</p>
+            <p>You will find posts about:</p>
+            <ul>
+                <li>Learning experiences</li>
+                <li>Software development</li>
+                <li>Tools and technologies</li>
+                <li>Tips and tutorials</li>
+                <li>Personal projects</li>
+            </ul>
+            <a href="/about" class="btn btn-primary">Learn More</a>
+        </div>
+    </div>
+</section> 
