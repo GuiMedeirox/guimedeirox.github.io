@@ -39,20 +39,6 @@ layout: default
         </div>
 
         <footer class="post-footer">
-            <div class="post-share">
-                <h4>Share this post</h4>
-                <div class="share-buttons">
-                    <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}&url={{ page.url | absolute_url }}" target="_blank" rel="noopener" class="share-button twitter">
-                        Twitter
-                    </a>
-                    <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absolute_url }}" target="_blank" rel="noopener" class="share-button linkedin">
-                        LinkedIn
-                    </a>
-                    <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}" target="_blank" rel="noopener" class="share-button facebook">
-                        Facebook
-                    </a>
-                </div>
-            </div>
 
             <div class="post-navigation">
                 {% if page.previous.url %}
