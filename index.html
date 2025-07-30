@@ -98,7 +98,7 @@ title: Home
             {% for category in categories %}
             <div class="category-card">
                 <h3>
-                    <a href="{{ '/category/' | append: category[0] | relative_url }}">
+                    <a href="{{ '/category/' | append: category[0] | downcase | relative_url }}">
                         {{ category[0] | capitalize }}
                     </a>
                 </h3>

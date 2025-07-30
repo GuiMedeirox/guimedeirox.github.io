@@ -1,7 +1,6 @@
 ---
 layout: page
-title: About
-description: Learn more about Guilherme Medeiros and his learning journey in public
+title: ""
 ---
 
 # About me

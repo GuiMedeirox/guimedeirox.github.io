@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Posts
+title: ""
 permalink: /posts/
 ---
 
