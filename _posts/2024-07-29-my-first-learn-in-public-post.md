@@ -16,4 +16,10 @@ excerpt: "Starting my learn in public journey with this first post. Sharing my e
 
 > Quote test
 
+```js
+    for(let i = 0; i < 10; i++){
+        console.log(i);
+    }
+```
+
 My first post (second, technically) will be about Promises and usecases, inspired by [The Amazing Sam Santos Encyclopedia](https://github.com/samsantosb/How-to-Promises)
