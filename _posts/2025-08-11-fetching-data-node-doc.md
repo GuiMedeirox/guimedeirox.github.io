@@ -9,7 +9,7 @@ excerpt: "Fetching data and raising questions about the native data fetch method
 
 # Largando a tecnologia e abraçando a tradição. 
 
-Apesar de ser um fã honesto do axios, me propûs ao desafio de ler a documentação do nodeJS e cá estamos, atualmente estou no tópico [fetching data w/ nodejs](https://nodejs.org/en/learn/getting-started/fetch). 
+Apesar de ser um fã honesto do axios, me propus ao desafio de ler a documentação do nodeJS e cá estamos, atualmente estou no tópico [fetching data w/ nodejs](https://nodejs.org/en/learn/getting-started/fetch). 
 
 A requisição usando o verbo GET foi totalmente de boas de se ver e entender, mas o que me deixou meio pegado, sinceramente, foi a requisição com o verbo POST: 
 
