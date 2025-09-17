@@ -19,6 +19,7 @@ excerpt: "Starting my learn in public journey with this first post. Sharing my e
 ```js
     for(let i = 0; i < 10; i++){
         console.log(i);
+        console.log(i+1);
     }
 ```
 
