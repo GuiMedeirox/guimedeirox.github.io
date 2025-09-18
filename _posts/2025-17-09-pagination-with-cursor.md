@@ -26,7 +26,7 @@ Podemos enxergar como sendo um critério de referência que será utilizado na p
 
 "Sério mesmo?" Aham.
 
-![imagem corrida revezada](assets/images/bolt.png)
+![resultado da query](/assets/images/bolt.png)
 
 Leve em consideração a imagem mencionada anteriormente, de uma corrida de revezamento. 
 
