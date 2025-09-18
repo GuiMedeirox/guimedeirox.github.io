@@ -25,6 +25,7 @@ Possível dúvida: "Paginação com cursor é uma paginação escrita através d
 Podemos enxergar como sendo um critério de referência que será utilizado na paginação dentro da nossa base de dados. 
 
 "Sério mesmo?" Aham.
+
 ![imagem corrida revezada](assets/images/bolt.png)
 
 Leve em consideração a imagem mencionada anteriormente, de uma corrida de revezamento. 
