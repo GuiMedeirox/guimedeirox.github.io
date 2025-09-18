@@ -11,7 +11,7 @@ tags:
   - cursor
 excerpt: Um post falando um pouco sobre o que é paginação com cursor e trazer alguns exemplos
 ---
-## Paginação? De novo? 
+Paginação? De novo? 
 
 Sim, meu camarada. Novamente, um outro post sobre paginação. Mas a tudo dai graças!
 
@@ -24,9 +24,10 @@ Possível dúvida: "Paginação com cursor é uma paginação escrita através d
 
 Podemos enxergar como sendo um critério de referência que será utilizado na paginação dentro da nossa base de dados. 
 
-"Sério mesmo?" Aham.
+"Sério mesmo?" Aham. 
 
-![resultado da query](/assets/images/bolt.png)
+<img src="/assets/images/bolt.png" alt="Usain Bolt" width="100%" />
+
 
 Leve em consideração a imagem mencionada anteriormente, de uma corrida de revezamento. 
 
