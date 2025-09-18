@@ -15,7 +15,7 @@ excerpt: Um post falando um pouco sobre o que é paginação com cursor e trazer
 
 Sim, meu camarada. Novamente, um outro post sobre paginação. Mas a tudo dai graças!
 
-Como mencionei [[2025-09-14-pagination-with-offset|no post anterior]] , não vou trazer a introdução de paginação acompanhado do script para popular. Vou comentar sobre essa outra técnica de explicação que, particularmente dizendo, achei muito maneira e útil. 
+Como mencionei [no post anterior](https://guimedeirox.github.io/posts/pagination-with-offset/) , não vou trazer a introdução de paginação acompanhado do script para popular. Vou comentar sobre essa outra técnica de explicação que, particularmente dizendo, achei muito maneira e útil. 
 
 Possível dúvida: "Paginação com cursor é uma paginação escrita através da IDE do Cursor?" Não. Quer dizer, pode até ser que sim, mas não necessariamente vai ser escrito lá. Sigamos. 
 
@@ -25,8 +25,7 @@ Possível dúvida: "Paginação com cursor é uma paginação escrita através d
 Podemos enxergar como sendo um critério de referência que será utilizado na paginação dentro da nossa base de dados. 
 
 "Sério mesmo?" Aham.
-
-![[Pasted image 20250917213157.png]]
+![imagem corrida revezada](assets/images/bolt.png)
 
 Leve em consideração a imagem mencionada anteriormente, de uma corrida de revezamento. 
 
